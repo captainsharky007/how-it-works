@@ -1,0 +1,7 @@
+cd /Users/jevgenijs/"Sonarworks Dropbox"/"Jevgēnijs Zaremba"/how-it-works
+
+Webpack commands:
+"build": "webpack"
+"start": "webpack-dev-server --open"
+
+npm run build

@@ -1,0 +1,263 @@
+@import "custom.scss";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/utilities/spacing";
+@import "node_modules/bootstrap/scss/utilities/background";
+@import "node_modules/bootstrap/scss/utilities/display";
+@import "node_modules/bootstrap/scss/utilities/sizing";
+@import "node_modules/bootstrap/scss/utilities/flex";
+@import "node_modules/bootstrap/scss/utilities/text";
+@import "node_modules/bootstrap/scss/utilities/position";
+
+@import "node_modules/bootstrap/scss/dropdown";
+
+@import "buttons.scss";
+@import "type.scss";
+@import "icons.scss";
+
+@include media-breakpoint-up(sm) {
+    .bg-sm-light {
+        background-color: $light;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,500,600,700');
+
+
+main {
+    margin-top: 60px;
+}
+
+// Clear old 
+.bg-light {
+    color: unset;
+} 
+.button, .copyright, .header .h-mobile-content .nav-item .hmc-button, .link, .size-s, .small, a, button {
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+//
+
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.modal-backdrop {
+    background-color: white;
+    opacity: 1 !important;
+}
+
+.modal-fullscreen .modal-dialog {
+    // max-width: 100%;
+    // max-height: 100%;
+   // height: 100%;
+    // padding: 0;
+    // margin: 0;
+
+    .modal-content {
+       // height: 100%;
+        border-radius: 0;
+        border: none;
+    }
+
+    .modal-header {
+        border: none;
+    }
+}
+
+.headphones-hero-img {
+    background-image: url('../assets/img/headphones-computer-on-table.png');
+    background-size: 100% auto;
+    background-position: calc(50%) bottom;
+    background-repeat: no-repeat;
+    padding-top: 48px;
+
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 80vw !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 500px;
+    }
+}
+
+
+
+a {
+    color: $blue;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    ;
+}
+
+.link-arrow {
+    display: flex;
+}
+
+.link-arrow::after {
+    margin-left: 8px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(./../assets/icons/arrow-right.svg);
+
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+.clr-studio {
+    color: $studio-edition-color;
+}
+
+.clr-headphones {
+    color: $headphones-edition-color;
+}
+
+
+.checklist {
+    display: flex;
+    flex-direction: column;
+
+    li {
+        display: flex;
+    }
+
+    li::before {
+        margin-right: $spacer;
+        align-items: center;
+        content: "";
+        display: inline-flex;
+        background-image: url(./../assets/icons/active.svg);
+        height: 20px;
+        width: 20px;
+        flex-shrink: 0;
+    }
+}
+
+.bulletlist {
+
+    li {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    li::before {
+        float: left;
+        margin-left: $spacer;
+        align-items: center;
+        content: "";
+        background-image: url(./../assets/icons/round.svg);
+        height: 20px;
+        width: 20px;
+        flex-shrink: 0;
+        margin-top: 4px;
+        margin-left: -30px;
+        background-repeat: no-repeat;
+    }
+}
+
+.learn-more-studio {
+    background-image: url(./../assets/img/speakers-computer-on-table.jpg);
+    background-size: auto 125%;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    min-height: 250px;
+}
+
+@include media-breakpoint-down(xs) {
+    .learn-more-studio-block {
+        border-top: 1px solid $light-darker;
+        background-image: url(./../assets/img/speakers-computer-on-table.jpg);
+        background-size: 170% auto;
+        background-position: calc(50% - 10px) bottom;
+        background-repeat: no-repeat;
+        padding-top: 48px;
+        padding-bottom: 65vw !important;
+
+    }
+
+}
+
+$custom-spacer: 1rem !default;
+$custom-spacers: () !default;
+$custom-spacers: map-merge((0: 0,
+16: ($custom-spacer * 1),
+24: ($custom-spacer * 1.5),
+32: ($custom-spacer * 2),
+48: ($custom-spacer * 3),
+64: ($custom-spacer * 4),
+96: ($custom-spacer * 6)),
+$custom-spacers);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+
+        @each $prop,
+        $abbrev in (margin: m, padding: p) {
+
+            @each $size,
+            $length in $custom-spacers {
+
+                .#{$abbrev}#{$infix}-#{$size} {
+                    #{$prop}: $length !important;
+                }
+
+                .#{$abbrev}t#{$infix}-#{$size},
+                .#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-top: $length !important;
+                }
+
+                .#{$abbrev}r#{$infix}-#{$size},
+                .#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-right: $length !important;
+                }
+
+                .#{$abbrev}b#{$infix}-#{$size},
+                .#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-bottom: $length !important;
+                }
+
+                .#{$abbrev}l#{$infix}-#{$size},
+                .#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-left: $length !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@include media-breakpoint-only(xs) {
+    .btn-block-xs {
+        display: block;
+        width: 100%;
+    }
+
+    .text-center-xs {
+        text-align: center;
+    }
+}

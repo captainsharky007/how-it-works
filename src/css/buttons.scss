@@ -1,0 +1,50 @@
+.btn {
+    font-size: $font-size-base * .9375;
+  border-radius: 3.1415px;
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.btn-lg {
+    font-size: $font-size-base;
+    padding:11px 15px;
+}
+
+.btn-sm {
+    font-size: $font-size-base * .875;
+}
+
+.btn,
+.btn-lg,
+.btn-lg {
+    font-weight: bold;
+}
+
+.btn-primary {
+    border-color: $blue-darker;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: $blue;
+    border-color: $light-darker;
+    outline-color: $blue;
+
+    &:hover,
+    &:active {
+        background-color: white !important;
+        color: $blue !important;
+    }
+
+    &:focus + &:hover {
+    	
+        border-color: $light-darker;
+    }
+
+    &:active {
+		box-shadow: 0 0 0 0.2rem rgba($blue, .3) !important;
+    }
+}

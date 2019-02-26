@@ -1,0 +1,32 @@
+{
+    "url":
+    {
+        "store": "https://www.sonarworks.com/store",
+        "supportedHeadphones": "https://www.sonarworks.com/reference/headphones",
+        "srStandart": "https://www.sonarworks.com/standard",
+        "individualCalibration": "https://www.sonarworks.com/reference/individual-calibration",
+        "contactForm": "",
+        "mailToHello": "mailto:hello@sonarworks.com",
+        "mailToSupport": "mailto:support@sonarworks.com"
+    },
+    "products":
+    {
+        "downloadReference": "https://www.sonarworks.com/reference/downloads",
+        "headphonesEdition": "https://store.sonarworks.com/collections/reference-4/products/reference-4-headphone-edition",
+        "studioEdition": "https://store.sonarworks.com/collections/reference-4/products/reference-4-studio-edition",
+        "studioEditionMic": "https://store.sonarworks.com/collections/reference-4/products/reference-4-studio-edition-with-mic"
+    },
+    "faq":
+    {
+        "systemwideVsPlugin": "https://sonarworks.zendesk.com/hc/en-us/articles/214211325-Systemwide-vs-Plugin",
+        "canIUseAvarage": "https://sonarworks.zendesk.com/hc/en-us/articles/208586185-Can-I-use-an-averaged-calibration-profile-on-a-similar-headphone-model-",
+        "whenINeedBypass": "https://sonarworks.zendesk.com/hc/en-us/articles/206541529-When-do-I-need-to-bypass-the-plugin-",
+        "mojave": "https://sonarworks.zendesk.com/hc/en-us/articles/360010481074-Mojave-requires-microphone-access-for-Systemwide",
+        "offlineActivation": "https://sonarworks.zendesk.com/hc/en-us/articles/203333722-Offline-activation-How-does-it-work-"
+    },
+    "internal":
+    {
+        "howItWorksHeadphones": "headphones.html",
+        "howItWorksStudio": "studio.html"
+    }
+}

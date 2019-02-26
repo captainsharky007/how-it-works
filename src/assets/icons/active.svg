@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>step/active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-sandbox" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Headphones-Edition-Copy" transform="translate(-26.000000, -2391.000000)" fill-rule="nonzero">
+            <g id="Group-34" transform="translate(24.000000, 1510.000000)">
+                <g id="Group-21" transform="translate(0.000000, 692.000000)">
+                    <g id="components/steps/regular/vertical/completed-copy-7" transform="translate(2.000000, 188.000000)">
+                        <g id="step/active" transform="translate(0.009510, 1.000000)">
+                            <path d="M10.0475508,0 C4.50130274,0 0,4.48 0,10 C0,15.52 4.50130274,20 10.0475508,20 C15.5937988,20 20.0951015,15.52 20.0951015,10 C20.0951015,4.48 15.5937988,0 10.0475508,0 Z" id="Shape" fill="#46D59D"></path>
+                            <path d="M13.3156078,6.33563616 L14.8175344,7.66436384 L9.45884063,13.6643638 C9.0591581,14.1118787 8.35659655,14.1118787 7.95691402,13.6643638 L5.27756715,10.6643638 L6.77949376,9.33563616 L8.70787732,11.4948007 L13.3156078,6.33563616 Z" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

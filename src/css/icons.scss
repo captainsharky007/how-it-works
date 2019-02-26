@@ -1,0 +1,25 @@
+// .icons-arrow-right {
+//     background-image: url(./../assets/icons/arrow-right.svg);
+//     width: 24px;
+//     height: 24px;
+//     display: block;
+// }
+
+.icons-arrow {
+    background-image: url(./../assets/icons/arrow-right.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin:8px;
+    background-repeat: no-repeat;
+
+
+    &-right {
+    	@extend .icons-arrow;
+    }
+
+    &-left {
+        @extend .icons-arrow;
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,89 @@
+@import "custom.scss";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/tooltip.scss";
+@import "carousel.scss";
+
+
+.speakers-hero-img {
+    background-image: url('./../assets/img/speakers-computer-on-table.jpg');
+    background-size: 170% auto;
+    background-position: calc(50% - 15px) bottom;
+    background-repeat: no-repeat;
+    padding-top: 48px;
+
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 65vw !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 500px;
+    }
+}
+
+
+.img-more-info {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url('./../assets/icons/info.svg');
+
+
+    &-1 {
+        @extend .img-more-info;
+        top: 10px;
+        left: -2%;
+    }
+
+    &-2 {
+        @extend .img-more-info;
+        top: 40px;
+        left: 33%;
+    }
+
+    &-3 {
+        @extend .img-more-info;
+        top: 5px;
+        left: 60%;
+    }
+
+    &-4 {
+        @extend .img-more-info;
+        top: 50px;
+        left: 92%;
+
+        &.active {
+            width: 200px;
+        }
+    }
+
+}
+
+.learn-more-speakers {
+    background-image: url(./../assets/img/headphones-computer-on-table.jpg);
+    background-size: auto 145%;
+    background-position: 40% bottom;
+    background-repeat: no-repeat;
+    min-height: 250px;
+}
+
+@include media-breakpoint-down(xs) {
+    .learn-more-speakers-block {
+        border-top: 1px solid $light-darker;
+        background-image: url(./../assets/img/headphones-computer-on-table.jpg);
+        background-size: 130% auto;
+        background-position: calc(40%) bottom;
+        background-repeat: no-repeat;
+        padding-top: 48px;
+ padding-bottom: 65vw !important;
+       
+    }
+
+}
